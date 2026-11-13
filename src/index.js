@@ -56,6 +56,7 @@ client.on('messageCreate', async (message) => {
     } catch (error) {
       console.error("Error copying message:", error);
     }
+    await message.delete();
   }
 
   // greet if called
